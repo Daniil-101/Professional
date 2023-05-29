@@ -1,17 +1,18 @@
+package ru.daniil_101.fruitbox;
+
 import java.util.Random;
 
-public class Apple extends Fruit {
+public abstract class Fruit {
     private final double weight;
 
-    public Apple() {
+    public Fruit() {
         this.weight = 0.05 + new Random().nextDouble() * (0.2 - 0.05);
     }
 
-    public Apple(double weight) {
+    public Fruit(double weight) {
         this.weight = weight;
     }
 
-    @Override
     public double getWeight() {
         return weight;
     }

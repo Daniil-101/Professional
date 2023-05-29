@@ -1,3 +1,5 @@
+package ru.daniil_101.fruitbox;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -28,25 +30,20 @@ public class Main {
         System.out.println("Коробка с яблоками весит: " + appleBox.weight() + " кг.");
         System.out.println("Коробка с апельсинами весит: " + orangeBox.weight() + " кг.");
         System.out.println();
+
         System.out.printf("Коробка с яблоками весит столько же, сколько и с апельсинами? %s \n",
                 appleBox.compare(orangeBox) ? "Да" : "Нет");
         System.out.printf("Коробка с фруктами весит столько же, сколько и с яблоками? %s \n",
                 fruitBox.compare(appleBox) ? "Да" : "Нет");
         System.out.println();
-        appleBox.pourInto(fruitBox);
-        System.out.printf("""
+
+        if (appleBox.pourInto(fruitBox)){
+            System.out.printf("""
                 Пересыпали яблоки в коробку с фруктами:\s
                 Вес корбки с яблоками: %s кг.\s
                 Вес корбки с фруктами: %s кг.\s
                 """, appleBox.weight(), fruitBox.weight());
+        }
         System.out.println();
-
-        Box<Orange> orangeBox1 = new Box<>();
-        orangeBox.topUp(orangeBox1);
-        System.out.printf("""
-                Пересыпали апельсины в новую коробку для апельсинов:\s
-                Вес корбки с апельсинами: %s кг.\s
-                Вес новой корбки для апельсинов: %s кг.\s
-                """, orangeBox.weight(), orangeBox1.weight());
     }
 }
