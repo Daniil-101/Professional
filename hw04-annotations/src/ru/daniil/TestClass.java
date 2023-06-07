@@ -1,3 +1,5 @@
+package ru.daniil;
+
 import ru.daniil.framework.After;
 import ru.daniil.framework.Before;
 import ru.daniil.framework.Test;

@@ -1,3 +1,5 @@
+package ru.daniil;
+
 import ru.daniil.framework.TestRunner;
 
 public class Main {
