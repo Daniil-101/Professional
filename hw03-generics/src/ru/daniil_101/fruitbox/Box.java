@@ -30,11 +30,9 @@ public class Box<T extends Fruit> {
     }
 
     public boolean pourInto(Box<? super T> box) {
-        if(box == null || box == this) return false;
-        else {
-            box.getContent().addAll(content);
-            content.clear();
-            return true;
-        }
+        if (box == null || box == this) return false;
+        box.getContent().addAll(content);
+        content.clear();
+        return true;
     }
 }
