@@ -1,4 +1,4 @@
-package org.example;
+package org.ru.daniil_101.atm;
 
 public class IOStreamService implements IOService{
     @Override

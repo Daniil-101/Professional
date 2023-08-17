@@ -1,4 +1,4 @@
-package org.example;
+package org.ru.daniil_101.atm;
 
 public class IOStreamServiceSpies implements IOService{
     private String resultOfChecking = "";
