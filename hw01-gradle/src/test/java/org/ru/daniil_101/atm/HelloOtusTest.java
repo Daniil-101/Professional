@@ -1,4 +1,4 @@
-package org.example;
+package org.ru.daniil_101.atm;
 
 import org.junit.jupiter.api.Test;
 
